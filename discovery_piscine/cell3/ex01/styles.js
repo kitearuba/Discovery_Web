@@ -1,16 +1,46 @@
-
-const diametro = 200;
-const incremento = 10;
-
-function boom(size, incremento) {
+document.getElementById("myButton").addEventListener("click", boom()); {
     
-    let rojo = rojo;
-    let verde = verde;
-    let azul = azul;
+    const diametro = 200;
+    const incremento = 10;
+    const rojo = 0;
+    const verde = 1;
+    const azul = 2;
 
-    if (condition) {
-        
-    } else {
-        
+    let colorValor = 0;
+    let diametroActual;
+
+
+    function boom(size, incremento) {
+        if (condition) {
+            
+        } else {
+            
+        }
     }
+    function desinflar() {
+        
+        
+    
+        if (colorValor == rojo) {
+            colorValor=  2;
+        } 
+        else if(colorValor == verde){
+            colorValor=  0;
+        }
+        else{
+            colorValor=  1;
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
 }
