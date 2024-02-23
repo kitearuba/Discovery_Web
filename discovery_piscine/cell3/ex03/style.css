@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#app {
+    width: 100%;
+    max-width: 400px; /* Ajusta el ancho máximo del contenedor de la aplicación */
+}
+
+#newTaskBtn {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    display: block; /* Centrar el botón en el contenedor */
+    margin: 0 auto 20px; /* Añade margen automático a los lados para centrar, y margen abajo */
+}
+
+#ft_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 2px solid #007bff; /* Borde alrededor de la lista */
+    border-radius: 5px; /* Bordes redondeados para la lista */
+    padding: 10px; /* Espaciado interno para la lista */
+}
+
+.task {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    position: relative; /* Para la posición de los números */
+    padding-left: 30px; /* Espacio para los números */
+}
+
+.task:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.task:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.task:before {
+    content: counter(taskCounter); /* Contador automático */
+    counter-increment: taskCounter; /* Incrementa el contador */
+    position: absolute;
+    left: 10px; /* Distancia del borde izquierdo */
+    top: 50%;
+    transform: translateY(-50%); /* Centrar verticalmente */
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px; /* Alineación vertical del texto */
+}
+
+#ft_list {
+    counter-reset: taskCounter; /* Reinicia el contador para la lista */
+}
