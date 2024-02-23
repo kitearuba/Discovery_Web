@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    justify-content: center;
+    background: black;
+}
+#globo {
+    margin-top: 25vh;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    background: red;
+    font-size: 1.5rem;
+    cursor: pointer;
+}

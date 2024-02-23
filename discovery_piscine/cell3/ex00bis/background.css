@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    justify-content: center;
+    background: antiquewhite;
+}
+button {
+    margin-top: 45vh;
+    padding: 7px 15px;
+    border: 3px solid #1b1fee;
+    border-radius: 30%;
+    background: #c4c1c1;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
