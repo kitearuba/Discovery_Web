@@ -94,5 +94,23 @@ $(document).ready(function() {
                 break;
             case '%':
                 if (miembroDerecho === 0) {
-                    alert("It's over ⬤
+                    alert("It's over 9000!");
+                    console.log("It's over 9000!");
+                    return;
+                }
+                resultado = miembroIzquierdo % miembroDerecho;
+                break;
+            default:
+                alert("Operación no válida");
+                console.log("Operación no válida");
+                return;
+        }
 
+        alert(`El resultado es: ${resultado}`);
+        console.log(`El resultado es: ${resultado}`);
+    });
+
+    setInterval(function() {
+        alert("Please, use me...");
+    }, 30000);
+});
